@@ -16,26 +16,15 @@
 
 package com.example.android.uamp.viewmodels
 
-import androidx.lifecycle.LiveData
-import androidx.lifecycle.MutableLiveData
-import androidx.lifecycle.Observer
-import androidx.lifecycle.Transformations
-import androidx.lifecycle.ViewModel
-import androidx.lifecycle.ViewModelProvider
 import android.support.v4.media.MediaBrowserCompat
 import android.support.v4.media.MediaBrowserCompat.MediaItem
 import android.support.v4.media.MediaBrowserCompat.SubscriptionCallback
 import android.support.v4.media.MediaMetadataCompat
 import android.support.v4.media.session.PlaybackStateCompat
-import android.util.Log
-import com.example.android.uamp.EMPTY_PLAYBACK_STATE
-import com.example.android.uamp.MediaItemData
-import com.example.android.uamp.MediaItemFragment
-import com.example.android.uamp.MediaSessionConnection
-import com.example.android.uamp.NOTHING_PLAYING
+import androidx.lifecycle.*
+import com.example.android.uamp.*
 import com.example.android.uamp.R
 import com.example.android.uamp.media.extensions.id
-import com.example.android.uamp.media.extensions.isPlayEnabled
 import com.example.android.uamp.media.extensions.isPlaying
 
 /**
